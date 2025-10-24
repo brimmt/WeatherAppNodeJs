@@ -1,0 +1,111 @@
+body {
+    font-family: Poppins, sans-serif;
+    background: url(weatherpic.png) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 50, 0.2)
+  );
+  z-index: -1;
+}
+
+
+
+
+.app {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38 , 135, 0.37);
+
+}
+
+button {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
+    font-weight: bold;
+    padding: 0.6rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 0.5rem 0.8rem;
+    color: black;
+    font-size: 0.9rem;
+    outline: none;
+    margin-right: 0.5rem;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(79, 172, 254, 0.5);
+    margin-bottom: 1.2rem;
+}
+    
+    
+    
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.2rem;
+    
+}
+
+.app {
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
+
+#weatherResults{}
+
+
+
+    
